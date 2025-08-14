@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
-    const API_KEY = "AIzaSyBuTv3F6OMRj6mas74yCCWkmk4y6GC7l-8";
+    const API_KEY = "";
     const SENTIMENT_API_URL = 'http://localhost:5001/predict';
 
     chrome.tabs.query({ active: true, currentWindow: true }, async (tabs) => {
