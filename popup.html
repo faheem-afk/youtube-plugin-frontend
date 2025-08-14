@@ -1,27 +1,50 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Sentiment API</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <style>
-            body {
-                width: 400px; 
-                height: 500px;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Test Sentiment</h1>
-        <button id='sendRequest'>Send Random Text</button>
-        <div id="response"></div>
-        <script src="popup.js" async defer></script>
-    </body>
+<head>
+  <meta charset="utf-8" />
+  <title>YouTube Comment Analyzer</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="title">YouTube Comment Analyzer</h1>
+
+    <div class="subtle">YouTube Video ID</div>
+    <div id="videoId" class="mono pill"></div>
+
+    <div id="status" class="status">Fetching comments…</div>
+
+    <h2 class="section">Comment Analysis Summary</h2>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-title">Total Comments</div>
+        <div id="Total" class="card-value">–</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Unique Commentators</div>
+        <div id="Unique" class="card-value">–</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Avg Comment Length</div>
+        <div id="AvgLength" class="card-value">–</div>
+      </div>
+      <div class="card">
+        <div class="card-title">Avg Sentiment Score</div>
+        <div id="AvgSentiment" class="card-value">–</div>
+      </div>
+    </div>
+
+    <h2 class="section">Sentiment Analysis Results</h2>
+    
+    <h2 class="section">Word Cloud</h2>
+
+    <h2 class="section">Monthly Sentiment Analysis</h2>
+
+    <h2 class="section">Top 25 Comments with Sentiments</h2>
+    <div id="list" class="list"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
 </html>

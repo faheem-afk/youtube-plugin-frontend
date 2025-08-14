@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube Sentiment Analysis",
+    "version": "1.0",
+    "description": "checks if the current tab has youtube open.",
+    "action": {
+        "default_popup": "popup.html"
+    },
+   
+    "permissions": ["tabs"],
+    "host_permissions": ["https://*.youtube.com/*", "https://youtu.be/*"]
+    }
+
+

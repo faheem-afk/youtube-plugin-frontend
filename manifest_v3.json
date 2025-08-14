@@ -3,7 +3,7 @@
   "name": "YouTube Stats",
   "version": "1.0",
   "action": { "default_popup": "popup.html" },
-  "permissions": ["tabs", "activeTab", "scripting"],
+  "permissions": ["tabs"],
   "host_permissions": [
     "https://*.youtube.com/*",
     "https://youtu.be/*",

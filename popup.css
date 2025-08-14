@@ -1,0 +1,30 @@
+:root{
+  --bg:#0f1115; --panel:#1a1f29; --muted:#8a93a5; --text:#e7ebf3;
+  --pos:#35c759; --neu:#9097a6; --neg:#ff453a; --pill:#242b37; --border:#2a3241;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:14px/1.45 Inter,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+.wrap{width:360px; padding:16px 16px 24px}
+.title{margin:0 0 10px; font-size:20px; font-weight:700}
+.subtle{color:var(--muted); font-weight:600; margin-top:6px}
+.mono{font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
+.pill{display:inline-block; background:var(--pill); border:1px solid var(--border); padding:6px 10px; border-radius:10px; margin-top:6px}
+.status{margin:12px 0 8px; color:var(--muted)}
+.section{margin:16px 0 10px; font-size:16px; color:#bcd0ff}
+
+.cards{display:grid; grid-template-columns:repeat(2,1fr); gap:10px}
+.card{background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:12px; text-align:center; box-shadow:0 1px 0 rgba(0,0,0,.25)}
+.card-title{font-size:12px; letter-spacing:.6px; color:var(--muted); font-weight:700}
+.card-value{font-size:22px; font-weight:800; margin-top:6px}
+
+.list {
+  display: flex; flex-direction: column; gap: 10px; margin-top: 6px; margin-bottom: 6px; max-height: 420px;overflow: auto;padding-right: 4px;max-width: 100%;
+}
+.item{background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:12px}
+.item-head{display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:8px}
+.idx{color:var(--muted); font-weight:700}
+.badge{padding:4px 8px; border-radius:999px; font-size:12px; font-weight:700; border:1px solid transparent}
+.badge.pos{background:color-mix(in srgb, var(--pos) 18%, transparent); color:var(--pos); border-color:color-mix(in srgb, var(--pos) 40%, transparent)}
+.badge.neu{background:color-mix(in srgb, var(--neu) 18%, transparent); color:var(--neu); border-color:color-mix(in srgb, var(--neu) 40%, transparent)}
+.badge.neg{background:color-mix(in srgb, var(--neg) 18%, transparent); color:var(--neg); border-color:color-mix(in srgb, var(--neg) 40%, transparent)}
+.item-body{white-space:pre-wrap; color:#d8deea}
